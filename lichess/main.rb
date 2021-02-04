@@ -24,14 +24,14 @@ end
 # Documentacion general: https://lichess.org/api
 # documentacion api get users public data: https://lichess.org/api#operation/apiUser
 
-def getLiveStreamers(n)
+def getLiveStreamers()
   url = URI("https://lichess.org/streamer/live")
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_NONE
   request = Net::HTTP::Get.new(url)
   response = http.request(request)
-  return JSON.parse(response.read_body)[1..10]
+  return JSON.parse(response.read_body)
 end
 
 def getUserData(name_id)
@@ -45,8 +45,13 @@ def getUserData(name_id)
 end
 
 # data = request("https://lichess.org/api/user/{username}")
-live_streamers = getLiveStreamers(3)
+live_streamers = getLiveStreamers()
 puts live_streamers
+fJson = File.open("live_streamers.json","w")
+fJson.write(live_streamers)
+fJson.close
+
+return 0
 
 complete_data = live_streamers.map do |streamer|
   getUserData(streamer["id"])
