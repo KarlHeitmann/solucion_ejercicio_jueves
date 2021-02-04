@@ -60,77 +60,77 @@ data = [
         "rating"=>1997,
         "rd"=>45,
         "prog"=>-21
-        }, "correspondence"=>{
-          "games"=>1,
-          "rating"=>1343,
-          "rd"=>353,
-          "prog"=>0,
-          "prov"=>true
-        }, "horde"=>{
-          "games"=>15,
-          "rating"=>1840,
-          "rd"=>151,
-          "prog"=>98,
-          "prov"=>true
-        }, "puzzle"=>{
-          "games"=>146,
-          "rating"=>2330,
-          "rd"=>168,
-          "prog"=>22,
-          "prov"=>true
-        }, "classical"=>{
-          "games"=>16,
-          "rating"=>1806,
-          "rd"=>217,
-          "prog"=>0,
-          "prov"=>true
-        }, "rapid"=>{
-          "games"=>45,
-          "rating"=>1980,
-          "rd"=>79,
-          "prog"=>141
-        }, "storm"=>{
-          "runs"=>1,
-          "score"=>23
-        }
-      },
-      "createdAt"=>1432907210365,
-      "profile"=>{
-        "country"=>"US",
-        "location"=>"Long Beach, California",
-        "bio"=>"My name is Rick, aka TheCoPilot, and I absolutely love playing chess. I love playing trash lines, awful attacks, and insane time scrambles. If the game gets the adrenaline pumping, I consider it a win! I stream often and find myself talking smack to anyone and everyone (all in fun of course) and I hope to see you stop by!",
-        "firstName"=>"Rick",
-        "lastName"=>"Cozart",
-        "uscfRating"=>1861,
-        "links"=>"Instagram: @rickcozart\r\nTwitch: https://www.twitch.tv/thecopilot"
-      },
-      "seenAt"=>1612476358367,
-      "playTime"=>{
-        "total"=>2541586,
-        "tv"=>8695
-      },
-      "language"=>"en-US",
-      "url"=>"https://lichess.org/@/TheCoPilot",
-      "playing"=>"https://lichess.org/tWBBI9wx/black",
-      "nbFollowing"=>14,
-      "nbFollowers"=>62,
-      "completionRate"=>100,
-      "count"=>{
-        "all"=>24703,
-        "rated"=>24393,
-        "ai"=>1,
-        "draw"=>825,
-        "drawH"=>825,
-        "loss"=>10678,
-        "lossH"=>10677,
-        "win"=>13200,
-        "winH"=>13200,
-        "bookmark"=>0,
-        "playing"=>1,
-        "import"=>5,
-        "me"=>0
-      },
-      "streaming"=>true
-    }
-  ]
+      }, "correspondence"=>{
+        "games"=>1,
+        "rating"=>1343,
+        "rd"=>353,
+        "prog"=>0,
+        "prov"=>true
+      }, "horde"=>{
+        "games"=>15,
+        "rating"=>1840,
+        "rd"=>151,
+        "prog"=>98,
+        "prov"=>true
+      }, "puzzle"=>{
+        "games"=>146,
+        "rating"=>2330,
+        "rd"=>168,
+        "prog"=>22,
+        "prov"=>true
+      }, "classical"=>{
+        "games"=>16,
+        "rating"=>1806,
+        "rd"=>217,
+        "prog"=>0,
+        "prov"=>true
+      }, "rapid"=>{
+        "games"=>45,
+        "rating"=>1980,
+        "rd"=>79,
+        "prog"=>141
+      }, "storm"=>{
+        "runs"=>1,
+        "score"=>23
+      }
+    },
+    "createdAt"=>1432907210365,
+    "profile"=>{
+      "country"=>"US",
+      "location"=>"Long Beach, California",
+      "bio"=>"My name is Rick, aka TheCoPilot, and I absolutely love playing chess. I love playing trash lines, awful attacks, and insane time scrambles. If the game gets the adrenaline pumping, I consider it a win! I stream often and find myself talking smack to anyone and everyone (all in fun of course) and I hope to see you stop by!",
+      "firstName"=>"Rick",
+      "lastName"=>"Cozart",
+      "uscfRating"=>1861,
+      "links"=>"Instagram: @rickcozart\r\nTwitch: https://www.twitch.tv/thecopilot"
+    },
+    "seenAt"=>1612476358367,
+    "playTime"=>{
+      "total"=>2541586,
+      "tv"=>8695
+    },
+    "language"=>"en-US",
+    "url"=>"https://lichess.org/@/TheCoPilot",
+    "playing"=>"https://lichess.org/tWBBI9wx/black",
+    "nbFollowing"=>14,
+    "nbFollowers"=>62,
+    "completionRate"=>100,
+    "count"=>{
+      "all"=>24703,
+      "rated"=>24393,
+      "ai"=>1,
+      "draw"=>825,
+      "drawH"=>825,
+      "loss"=>10678,
+      "lossH"=>10677,
+      "win"=>13200,
+      "winH"=>13200,
+      "bookmark"=>0,
+      "playing"=>1,
+      "import"=>5,
+      "me"=>0
+    },
+    "streaming"=>true
+  }
+]
 
