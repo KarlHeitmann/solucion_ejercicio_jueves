@@ -47,18 +47,16 @@ end
 # data = request("https://lichess.org/api/user/{username}")
 live_streamers = getLiveStreamers()
 puts live_streamers
-fJson = File.open("live_streamers.json","w")
-fJson.write(live_streamers)
+fJson = File.open("live_streamers_live.json","w")
+fJson.write(live_streamers.to_json)
 fJson.close
-
-return 0
 
 complete_data = live_streamers.map do |streamer|
   getUserData(streamer["id"])
 end
 
-fJson2 = File.open("complete_data.json","w")
-fJson2.write(complete_data)
+fJson2 = File.open("complete_data_live.json","w")
+fJson2.write(complete_data.to_json)
 fJson2.close
 
 puts complete_data
