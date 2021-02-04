@@ -30,9 +30,6 @@ puts live_streamers
 complete_data = live_streamers.map do |streamer|
   getUserData(streamer["id"])
 end
-fJson = File.open("complete_data.json","w")
-fJson.write(complete_data)
-fJson.close
 
 puts complete_data
 

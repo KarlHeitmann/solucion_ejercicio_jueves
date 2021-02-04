@@ -57,4 +57,8 @@ complete_data = live_streamers.map do |streamer|
   getUserData(streamer["id"])
 end
 
+fJson2 = File.open("complete_data.json","w")
+fJson2.write(complete_data)
+fJson2.close
+
 puts complete_data
