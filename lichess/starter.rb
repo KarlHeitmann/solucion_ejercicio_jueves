@@ -49,5 +49,15 @@ personal_data_streamers = live_streamers_full.map do |streamer|
   }
 end
 
+puts "Lista de solo datos personales de cada streamer "
 print personal_data_streamers
 puts
+
+puts "***********"
+# promedio_juegos = live_streamers_full.inject {|sumaout, streamer| sumaout += streamer["perfs"].reduce(0) {|suma_in, (perfs, val)| suma_in += val["rating"] } }
+# promedio_juegos = live_streamers_full.inject {|sumaout, streamer| sumaout += streamer["perfs"]["classical"]["rating"] }
+promedio_juegos = live_streamers_full["perfs"]["classical"].inject {|sumaout, streamer| sumaout += streamer["rating"].to_i }
+print "+++++"
+print promedio_juegos
+puts
+# Escribir en un archivo los datos personales. Poner los datos en una tabla con bootstrap.
