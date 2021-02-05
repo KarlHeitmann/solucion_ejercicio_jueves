@@ -76,12 +76,40 @@ string_html = '''<!doctype html>
   </head>
   <body>
     <h1>Pagina lichess ADL Costa Rica G 47</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">username</th>
+        </tr>
+      </thead>
+      <tbody>
     '''
 # TODO: Ponga su código acá:
-dato_tmp = "Hola"
-string_html += '<p>' + dato_tmp + '</p>'
+# dato_tmp = "Hola"
+# string_html += '<p>' + dato_tmp + '</p>'
+
+puts "=================="
+puts personal_data_streamers[0]
+puts "//////////////////"
+puts personal_data_streamers[0][:username]
+puts "++++++++++++++++++"
+
+personal_data_streamers.each do |streamer|
+  string_html += "<tr><td>#{streamer[:username]}</td></tr>"
+  # string_html += streamer["username"] + streamer["url"]
+end
+
+=begin
+string_html += personal_data_streamers.inject do |suma, streamer|
+  # suma += streamer["username"] + streamer["playing"] + streamer["url"] + streamer["language"] + streamer["nbFollowing"] + streamer["nbFollowers"]
+  puts streamer
+  suma += streamer[:username]
+end
+=end
 
 string_html += '''
+      </tbody>
+    </table>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
