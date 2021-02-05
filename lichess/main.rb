@@ -22,7 +22,7 @@ end
 
 # Pagina de lichess: https://lichess.org
 # Documentacion general: https://lichess.org/api
-# documentacion api get users public data: https://lichess.org/api#operation/apiUser
+# documentacion api get live streamers: https://lichess.org/api#operation/streamerLive
 
 def getLiveStreamers()
   url = URI("https://lichess.org/streamer/live")
@@ -34,6 +34,7 @@ def getLiveStreamers()
   return JSON.parse(response.read_body)
 end
 
+# documentacion api get data de un user https://lichess.org/api#operation/apiUser
 def getUserData(name_id)
   url = URI("https://lichess.org/api/user/#{name_id}")
   http = Net::HTTP.new(url.host, url.port)

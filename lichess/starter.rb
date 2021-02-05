@@ -26,3 +26,28 @@ end
 print live_streamers_full
 puts
 
+# perfiles: reducir lista a solo de los datos
+
+puts ":::::::::::::::"
+
+personal_data_streamers = live_streamers_full.map do |streamer|
+  {
+    username: streamer["username"],
+    playing: streamer["playing"],
+    url: streamer["url"],
+    language: streamer["language"],
+    nbFollowing: streamer["nbFollowing"],
+    nbFollowers: streamer["nbFollowers"],
+    country: streamer["profile"]["country"],
+    location: streamer["profile"]["location"],
+    bio: streamer["profile"]["bio"],
+    firstName: streamer["profile"]["bio"],
+    lastName: streamer["profile"]["bio"],
+    links: streamer["profile"]["links"],
+    totalPlayTime: streamer["playTime"]["total"],
+    tvPlayTime: streamer["playTime"]["total"],
+  }
+end
+
+print personal_data_streamers
+puts
